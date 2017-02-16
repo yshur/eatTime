@@ -1,51 +1,42 @@
 <!DOCTYPE html>
 	<html>
 		<head>
-			<title>eatTime</title>
-			<META charset="UTF-8">
-			<link rel="stylesheet" href="includes/style.css">
-			<script src="includes/script.js"></script>
-		</head>
-		<body>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>eatTime | time</title>
+		<link rel="stylesheet" href="includes/style.css">
+		<script src="includes/script.js"></script>
+
+	</head>
+		<body id="bodyApp">
 			<div id="wrapper" >
-				<header>
-					<a href="index.html" id="logo"></a>
-					<a href="http://www.cafecafe.co.il/he/home/a/main/" id="kafe"></a>
-					<a href="#" id="menu"></a>
+				<header id="headerApp"><logo>
+					<a href="http://www.cafecafe.co.il/he/home/a/main/" target="_blank" id="cafelogo"></a>
+					<span><a href="first.html" id="logo"></a></span>
+					<section id="menu"></section></logo>
 				</header>
 				<main class="time">
-					<span id="welcome">שלום אבי</span>
-					<section class="kategory">
-						<a href="menu.html"><section>1</section></a>
-						<a href="#"><section id="selected">2</section></a>
-						<a href="tables.html"><section>3</section></a>
-						<section>4</section>
-						<section>5</section>						
-					</section>
-					<p id="submtaf">שעת הגעה</p>
+					<span>שלום אבי</span>
+					<ul>
+						<a href="menu.html?itemsId=34" >1</a>
+						<a href="#" class="CurrKategory">2</a>
+						<a href="tables.html" >3</a>
+						<a href="#" >4</a>
+						<a href="#" >5</a>
+					</ul>
 					<article>
-						<h2>בחר שעת הגעה או הפעל שרותי מיקום</h2>
+						<h5 id="submtaf">שעת הגעה</h5>
+						<br><h4>בחר שעת הגעה או הפעל שרותי מיקום</h4><br>
 						<label><input type="radio" name="time" value="">
-							<select name="clock">
-								<option value="12:00">12:00</option> 
-								<option value="13:00" selected>13:00</option> 
-								<option value="14:00">14:00</option>
-								<option value="15:00">15:00</option>	
-								<option value="16:00">16:00</option> 
-								<option value="17:00">17:00</option> 
-								<option value="18:00">18:00</option>
-								<option value="19:00">19:00</option>
-								<option value="20:00">20:00</option> 
-								<option value="21:00">21:00</option> 
-								<option value="22:00">22:00</option>
-								<option value="23:00">23:00</option>
-							</select></label><br><br>
-						<label><input type="radio" name="time" value=""></label>
+							<input type="time" name="time" value="12:00">
+						</label><br><br>
+						<label><input type="radio" name="time" value=""></label><br>
 							<label><img src="images/map.PNG"/></label>
 					</article>
+
 				</main>
 				<footer>
-					<a href="tables.html"><button id="next">הבא</button></a>
+					<a href="tables.html" ><button id="next">הבא</button></a>
 				</footer>
 			</div>
 		</body>

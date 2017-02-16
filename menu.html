@@ -1,47 +1,42 @@
 <!DOCTYPE html>
 	<html>
 		<head>
-			<title>eatTime - menu</title>
-			<META charset="UTF-8">
-			<link rel="stylesheet" href="includes/style.css">
-			<script src="includes/script.js"></script>
-		</head>
-		<body>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>eatTime | menu</title>
+		<link rel="stylesheet" href="includes/style.css">
+		<script src="includes/jquery-3.1.1.js"></script>
+		<script src="includes/script.js"></script>
+
+	</head>
+		<body id="bodyApp">
 			<div id="wrapper" >
-				<header>
-					<a href="index.html" id="logo"></a>
-					<a href="http://www.cafecafe.co.il/he/home/a/main/" id="kafe"></a>
-					<a href="#" id="menu"></a>
+				<header id="headerApp"><logo>
+					<a href="http://www.cafecafe.co.il/he/home/a/main/" target="_blank" id="cafelogo"></a>
+					<span><a href="first.html" id="logo"></a></span>
+					<section id="menu"></section></logo>
 				</header>
 				<main class="menu">
-					<span id="welcome">שלום אבי</span>
-					<section class="kategory">
-						<a href="#"><section id="selected">1</section></a>
-						<a href="time.html"><section>2</section></a>
-						<section>3</section>
-						<section>4</section>
-						<section>5</section>						
+					<span>שלום אבי</span>
+					<ul>
+						<a href="#" class="CurrKategory">1</a>
+						<a href="time.html">2</a>
+						<a href="#" >3</a>
+						<a href="#" >4</a>
+						<a href="#" >5</a>
+					</ul>
+					<h5 id="submtaf">תפריט</h5>
+					<br><h4>הוסף מנות לעגלה שלך</h4><br>
+					<ul id="subktgr">
+					</ul>
+					<section id="items">
 					</section>
-					<p id="submtaf">תפריט</p>
-					<h2>הוסף מנות לעגלה שלך</h2>
-					<section id="selected" class="subktgr">ש. חמה</section>
-					<section class="subktgr">ש. קרה</section>
-					<section class="subktgr">פסטות</section>
-					<section class="subktgr">סלטים</section>
-					<section class="subktgr">כריכים</section>
-					
-					<section class="item">אספרסו</section>
-					<section class="item">אספרסו כפול</section>
-					<section class="item">קפוצ'ינו</section>
-					<section class="item">קפוצ'ינו גדול</section>
-					<section class="item">תה</section>
-					<section class="item">שוקו חם</section>
-					<section class="item">קפה שחור</section>
-					<section class="item"></section>
 				</main>
 				<footer>
 					<a href="time.html"><button id="next">הבא</button></a>
 				</footer>
 			</div>
+			<div id="dataServices"></div>
+			<script src="includes/json1.js"></script>
 		</body>
 	</html>

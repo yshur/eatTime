@@ -1,31 +1,38 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>eatTime</title>
-			<META charset="UTF-8">
-			<link rel="stylesheet" href="includes/style.css">
-			<script src="includes/script.js"></script>
-		</head>
-		<body>
-			<div id="wrapper" >
-				<header>
-					<a href="#" id="logo"></a>
-					<a href="http://www.cafecafe.co.il/he/home/a/main/" id="kafe"></a>
-					<a href="#" id="menu"></a>
-				</header>
-				<main>
-					<span id="welcome">שלום אבי</span>
-					<article>
-						<h1>ברוכים הבאים!!</h1>
-						<p>
-							  אנחנו שמחים להציג את הפלטפורמה בה ניתן להזמין ארוחה מראש ביעילות תוך צמצום זמן ההמתנה להזמנה ולהכנת הארוחה
-						</p>
-					</article>
-					<section class="mainOption">הצטרפות להזמנה קיימת</section>
-					<a href="menu.html"><section class="mainOption">ארוחה כולל מקום ישיבה</section></a>
-					<a href="menu.html"><section class="mainOption">ארוחה לבוא ולקחת</section></a>
-					<a href="time.html"><section class="mainOption">הזמנת מקום</section></a>
-				</main>
-			</div>
-		</body>
-	</html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EaTime | login</title>
+    <link rel="stylesheet" href="includes/style.css">
+    <script src="includes/script.js"></script>
+
+</head>
+<body id="bodyApp">
+<div id="wrapper" >
+    <header id="headerApp"><logo>
+        <a href="http://www.cafecafe.co.il/he/home/a/main/" target="_blank" id="cafelogo"></a>
+        <span><a href="#" id="logo"></a></span>
+        <section id="menu"></section></logo>
+    </header>
+    <nav>
+    </nav>
+    <main>
+        <article id="mainIndex">
+            <h4>ברוכים הבאים!!</h4>
+        </article>
+            <section>
+               <form id="login" action="php/login.php" method="post">
+                    <h5>התחברות משתמש</h5>
+                    <p><span>*</span><input type="email" name="mail" placeholder="כתובת דואר אלקטרוני.." required></p>
+                    <p><span>*</span><input type="password" name="password" placeholder="סיסמא.." required></p>
+                    <p><input type="submit" id="submit" value="אישור"></p>
+               </form>
+            </section>
+            <section id="login">
+                <a href="signin.html">משתמש חדש? לחץ כאן להתחברות</a>
+            </section>
+    </main>
+</div>
+</body>
+</html>

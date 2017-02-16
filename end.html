@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 	<html>
 		<head>
-			<title>eatTime</title>
-			<META charset="UTF-8">
-			<link rel="stylesheet" href="includes/style.css">
-			<script src="includes/script.js"></script>
-		</head>
-		<body>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>EaTime | end</title>
+		<link rel="stylesheet" href="includes/style.css">
+		<script src="includes/script.js"></script>
+	</head>
+		<body id="bodyApp">
 			<div id="wrapper" >
-				<header>
-					<a href="index.html" id="logo"></a>
-					<a href="http://www.cafecafe.co.il/he/home/a/main/" id="kafe"></a>
-					<a href="#" id="menu"></a>
+				<header id="headerApp"><logo>
+					<a href="http://www.cafecafe.co.il/he/home/a/main/" target="_blank" id="cafelogo"></a>
+					<span><a href="first.html" id="logo"></a></span>
+					<section id="menu"></section></logo>
 				</header>
 				<main class="end">
-					<span id="welcome">שלום אבי</span>
-					<section class="kategory">
-						<a href="menu.html"><section>1</section></a>
-						<a href="time.html"><section>2</section></a>
-						<a href="tables.html"><section>3</section></a>
-						<a href="friends.html"><section>4</section></a>
-						<a href="#"><section id="selected">5</section></a>						
-					</section>
-					<p id="submtaf">בתיאבון</p>
+					<span>שלום אבי</span>
+					<ul>
+						<a href="menu.html?itemsId=34" >1</a>
+						<a href="time.html">2</a>
+						<a href="tables.html" >3</a>
+						<a href="friends.html" >4</a>
+						<a href="#" class="CurrKategory">5</a>
+					</ul>
+					<h5 id="submtaf">בתאבון</h5>
 					<article>
 						<h3>ההזמנה בוצעה!!</h3><br>
 						<p>מספר הזמנה 00112</p><br>
@@ -34,9 +35,6 @@
 					</article>
 				</main>
 				<footer>
-					<section>
-						<a href="index.html"><button id="home"></button></a>
-					</section>
 				</footer>
 			</div>
 		</body>

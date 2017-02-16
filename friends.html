@@ -1,32 +1,35 @@
+
 <!DOCTYPE html>
 	<html>
 		<head>
-			<title>eatTime</title>
-			<META charset="UTF-8">
-			<link rel="stylesheet" href="includes/style.css">
-			<script src="includes/script.js"></script>
-		</head>
-		<body>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>EaTime | friends</title>
+		<link rel="stylesheet" href="includes/style.css">
+		<script src="includes/script.js"></script>
+
+	</head>
+		<body id="bodyApp">
 			<div id="wrapper" >
-				<header>
-					<a href="index.html" id="logo"></a>
-					<a href="http://www.cafecafe.co.il/he/home/a/main/" id="kafe"></a>
-					<a href="#" id="menu"></a>
+				<header id="headerApp"><logo>
+					<a href="http://www.cafecafe.co.il/he/home/a/main/" target="_blank" id="cafelogo"></a>
+					<span><a href="first.html" id="logo"></a></span>
+					<section id="menu"></section></logo>
 				</header>
 				<main class="friends">
-					<span id="welcome">שלום אבי</span>
-					<section class="kategory">
-						<a href="menu.html"><section>1</section></a>
-						<a href="time.html"><section>2</section></a>
-						<a href="tables.html"><section>3</section></a>
-						<a href="#"><section id="selected">4</section></a>
-						<a href="end.html"><section>5</section></a>						
-					</section>
-					<p id="submtaf">הזמן חבר</p>
-					<article>אם תרצה להזמין חבר השלם את הפרטים הבאים: (אם לא, עבור לדף הבא)</article>
-					<form action="../includes/friend.php" method="get">
+					<span>שלום אבי</span>
+					<ul>
+						<a href="menu.html?itemsId=34" >1</a>
+						<a href="time.html">2</a>
+						<a href="tables.html" >3</a>
+						<a href="#" class="CurrKategory">4</a>
+						<a href="end.html" >5</a>
+					</ul>
+					<h5 id="submtaf">הזמן חבר</h5>
+					<h4>אם תרצה להזמין חבר השלם את הפרטים הבאים: (אם לא, עבור לדף הבא)</h4><br>
+					<form action="php/friend.php" method="post">
 					<section>
-						<h4>הזן פרטי חבר</h4>
+						<h5>הזן פרטי חבר</h5>
 						<p><input type="email" name="mail" placeholder="כתובת דואר אלקטרוני.."></p>	
 						<p><input type="tel" name="phone" placeholder="מספר טלפון נייד.."></p>	
 						<p><input type="submit" id="submit" value="שלח"></p>
