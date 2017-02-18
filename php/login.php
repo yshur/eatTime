@@ -10,8 +10,8 @@ session_start();
 
 // username and password sent from form
 
-$email = (isset($_GET['email']) ? $_GET['email'] : null);
-$password = (isset($_GET['password']) ? $_GET['password'] : null);
+$email = (isset($_POST['email']) ? $_POST['email'] : null);
+$password = (isset($_POST['password']) ? $_POST['password'] : null);
 
 $sql = "SELECT fname FROM tbl_231_users WHERE email='$email' and password='$password'";
 $result = $conn->query($sql);

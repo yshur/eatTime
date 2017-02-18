@@ -10,11 +10,11 @@
 include('config.php');
 
 $id = "";
-$fname = (isset($_GET['fname']) ? $_GET['fname'] : null);
-$lname = (isset($_GET['lname']) ? $_GET['lname'] : null);
-$email = (isset($_GET['email']) ? $_GET['email'] : null);
-$phone = (isset($_GET['phone']) ? $_GET['phone'] : null);
-$password = (isset($_GET['password']) ? $_GET['password'] : null);
+$fname = (isset($_POST['fname']) ? $_POST['fname'] : null);
+$lname = (isset($_POST['lname']) ? $_POST['lname'] : null);
+$email = (isset($_POST['email']) ? $_POST['email'] : null);
+$phone = (isset($_POST['phone']) ? $_POST['phone'] : null);
+$password = (isset($_POST['password']) ? $_POST['password'] : null);
 
 if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
     echo "This ($email) email address is considered valid.\n";
