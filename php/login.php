@@ -1,5 +1,3 @@
-<html>
-<body>
 <?php
 /**
  * Created by PhpStorm.
@@ -8,19 +6,29 @@
  * Time: 20:36
  */
 include('config.php');
+session_start();
+
+// username and password sent from form
 
 $email = (isset($_GET['email']) ? $_GET['email'] : null);
 $password = (isset($_GET['password']) ? $_GET['password'] : null);
 
-$sql = "SELECT * FROM tbl_231_users WHERE email='$email' and password='$password'";
+$sql = "SELECT fname FROM tbl_231_users WHERE email='$email' and password='$password'";
 $result = $conn->query($sql);
-$row = $result->fetch_assoc();
 
-if ($conn->query($sql) === TRUE) {
-    echo "שלום" . $row["fname"];
+if ($result->num_rows > 0)  {
+    $row = $result->fetch_assoc();
+    if($email == 'einav_r5@hotmail.com')    {
+        header('location: ../management.html');
+        echo json_encode($row["fname"]);
+    } else {
+        header('location: ../first.html');
+    }
 } else {
-    echo "Error inserting course: " . $conn->error;
+    echo json_encode('שם משתמש או סיסמא שגויים');
+    header('location: ../index.html');
 }
+
+
 ?>
-</body>
-</html>
+

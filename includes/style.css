@@ -110,6 +110,9 @@ form span	{
 article	{
 	text-align: right;
 }
+article h4	{
+	margin: 15px;
+}
 p{
 	font-size:14px;
 }
