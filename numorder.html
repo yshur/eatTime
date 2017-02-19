@@ -4,9 +4,10 @@
 		<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>menu</title>
+		<title>numorder</title>
 		<link rel="stylesheet" href="includes/style.css">
 		<script src="includes/script.js"></script>
+
 	</head>
 		<body id="bodyApp">
 			<div id="wrapper" >
@@ -16,26 +17,25 @@
 					<section id="menu"></section></logo>
 				</header>
 				<main class="friends">
-					<span>שלום אבי</span>
+					<span>שלום חבר של אבי</span>
 					<ul>
-						<a href="menu.html?itemsId=34" >1</a>
-						<a href="time.html">2</a>
-						<a href="tables.html" >3</a>
-						<a href="#" class="CurrKategory">4<br>הזמן</a>
-						<a href="end.html" >5</a>
+						<a href="#" class="CurrKategory">1<br>כניסה</a>
+						<a href="manu2.html?itemsId=34">2</a>
+						<a href="#" >3</a>
+						<a href="#" >4</a>
 					</ul>
-					<h4>אם תרצה להזמין חבר השלם את הפרטים הבאים: (אם לא, עבור לדף הבא)</h4><br>
-					<form action="php/friends.php" method="post">
+					<h4>הקלד את מספר ההזמנה אליה תרצה להצטרף</h4><br>
+					<form action="php/orders.php" method="get">
 					<section>
-						<h5>הזן פרטי חבר</h5>
-						<p><input type="email" name="email" placeholder="כתובת דואר אלקטרוני.."></p>	
-						<p><input type="tel" name="phone" placeholder="מספר טלפון נייד.."></p>	
+						<label><h5>מספר הזמנה:</h5>
+						<p><span>*</span><input type="number" pattern="[0-9]{3}" value="405" name="numorder" placeholder="מספר הזמנה.." required>
+						</p></label>
 						<p><input type="submit" id="submit" value="שלח"></p>
 					</section>
 					</form>
 				</main>
 				<footer>
-					<a href="end.html"><button id="next">הבא</button></a>
+					<a href="manu2?itemsId=34.html"><button id="next">הבא</button></a>
 				</footer>
 			</div>
 		</body>

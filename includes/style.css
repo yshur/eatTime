@@ -5,38 +5,73 @@
 footer, header, article, section, main, nav, aside, p{
 	display:block;	
 }
+@vieport{
+	width: 760px;
+	zoom:1;
+}
+.clear {
+clear: both;
+}
 #bodyApp	{
 	font-family: Tahoma, sans-serif;
 	float: left;
 	color:#444444;
+	height:100%
+	max-height:1024px;
+	width:100%;
+	max-width:760px;
+	
 }
 #headerApp{
 	height:50px;
-	width:360px;
-	max-width:100%;
+	width:100%;
+	max-width:760px;
 	background-color:#000000;	
 }
-main	{
+		main	{
 	direction: rtl;
 	position: relative;
 	background: #ffffff;
 	text-align: center;
-	height: 500px;
-	margin-left: 10px;
-	margin-right: 10px;
+	height: 180px;
 }
-footer	{
-    margin-bottom: 0px;
-    width: 100%;
-	/*border-top: 0.5px gray solid; */
-}
-#wrapper	{
+@media(min-width:540px){
+	#wrapper	{
+	height:990px;
 	margin: 0 auto;
 	background: #ffffff;
-	width: 360px;
-	max-width:100%;
-	height: 600px;
-	
+	width: 100%;
+	max-width:760px;
+	height:100%
+	max-height:1024px;
+	}
+	footer	{
+    	margin-top: 700px;
+	    width: 100%;
+   	 	max-width:760px;
+   	 	height:100%;
+   	 	max-height:110px;
+		border-top: 0.5px gray solid;
+	}	
+}
+@media(max-width:539px){
+	#wrapper	{
+	height:630px;
+	margin: 0 auto;
+	background: #ffffff;
+	width: 100%;
+	max-width:760px;
+	height:100%
+	max-height:1024px;
+	}
+	footer	{
+    	margin-top: 350px;
+    	width: 100%;
+    	max-width:760px;
+    	height:100%;
+    	max-height:110px;
+	border-top: 0.5px gray solid; 
+	}
 }
 main div	{
 	width: 300px;
@@ -110,41 +145,34 @@ form span	{
 article	{
 	text-align: right;
 }
-article h4	{
-	margin: 15px;
-}
 p{
 	font-size:14px;
 }
 span{
 	font-size:14px;
 }
-.time #submtaf	{
-	margin-right: 60px;
-	margin-bottom: 20px;
+main h4{
+	margin-top:10%;
 }
-.tables #submtaf	{
-	margin-right: 135px;
-	margin-bottom: 20px;	
+.end h3{
+	text-align: center;
+	margin-top:5%;
 }
-.friends #submtaf	{
-	margin-right: 210px;
-	margin-bottom: 40px;	
-}
-.end #submtaf	{
-	margin-right: 290px;
-	margin-bottom: 40px;		
+.end p ,main h3{
+	margin-right: 10%;
 }
 /*------index------*/
 #mainIndex{
 	border-bottom: 0.5px #929292 solid;
-	
+	margin-left: 10px;
+	margin-right: 10px;
 }
 .mainOption	{
-	height: 55px;
+	height: 70px;
 	border-bottom: 0.5px #929292 solid;
 	font-size: 17px;
-	padding-top: 30px;
+	padding-top: 10%;
+	
 }
 /*--------menu---------*/
 a.CurrKategory{
@@ -202,6 +230,9 @@ main > span {
 	border-top: 0.5px gray solid;
 	text-align: right;
 }
+.time article{
+	padding-right: 8%;
+}
 /*--------tables---------*/
 .tablec	p	{
 	display: inline-block;
@@ -219,9 +250,6 @@ main > span {
 	display: inline-block;
 	margin-bottom: 2px;
 }
-.tablec	p	{
-	display: inline-block;
-}
 .blue	{
 	background-color: #2e1572;
 }
@@ -231,7 +259,6 @@ main > span {
 .green	{
 	background-color: #72bb53;
 }
-
 .table2ordr	{
 	display: block;
 	float: left;
@@ -248,51 +275,112 @@ main > span {
 	display: block;
 	float: left;
 }
-.table2ordr section	{
-	height: 33px;
-	width: 33px;
-	background-image: url("../images/2.PNG");
-	background-repeat: no-repeat;
-	background-position: center;
-	border: 0.5px gray solid;
-	display: inline-block;
-	float: left;
-	margin: 5px 5px 5px 5px;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-.table4ordr section	{
-	height: 33px;
-	width: 61px;
-	background-image: url("../images/4.PNG");
-	background-repeat: no-repeat;
-	background-position: center;	
-	border: 0.5px gray solid;
-	display: inline-block;
-	float: left;
-	margin: 5px 5px 5px 5px;	
-}
-.table6ordr section	{
-	height: 33px;
-	width: 89px;
+@media(min-width:540px){
+	.order{
+		margin-right:11%;
+		float:right;
+		height: 400px;
+		width: 540px;	
+		display:inline;
+	}
+	.table2ordr section	{
+		height: 66px;
+		width: 66px;
+		background-image: url("../images/2.PNG");
+		background-repeat: no-repeat;
+		background-position: center;
+		border: 0.5px gray solid;
+		display: inline-block;
+		float: left;
+		margin: 5px 5px 5px 5px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.table4ordr section	{
+		height: 66px;
+		width: 122px;
+		background-image: url("../images/4.PNG");
+		background-repeat: no-repeat;
+		background-position: center;	
+		border: 0.5px gray solid;
+		display: inline-block;
+		float: left;
+		margin: 5px 5px 5px 5px;	
+	}
+	.table6ordr section	{
+		height: 66px;
+		width: 178px;
 		background-image: url("../images/6.PNG");
-	background-repeat: no-repeat;
-	background-position: center;
-	border: 0.5px gray solid;
-	display: inline-block;
-	float: left;
-	margin: 5px 5px 5px 5px;	
+		background-repeat: no-repeat;
+		background-position: center;
+		border: 0.5px gray solid;
+		display: inline-block;
+		float: left;
+		margin: 5px 5px 5px 5px;	
+	}
+	.table8ordr section	{
+		height: 66px;
+		width: 236px;
+    	background-image: url("../images/8.PNG");
+    	background-repeat: no-repeat;
+    	background-position: center;
+		border: 0.5px gray solid;
+		display: inline-block;
+		float: left;
+		margin: 5px 5px 5px 5px;	
+	}
 }
-.table8ordr section	{
-	height: 33px;
-	width: 118px;
-    background-image: url("../images/8.PNG");
-    background-repeat: no-repeat;
-    background-position: center;
-	border: 0.5px gray solid;
-	display: inline-block;
-	float: left;
-	margin: 5px 5px 5px 5px;	
+@media(max-width:539px){
+	.order{
+		height: 220px;
+		width: 340px;
+	}
+	.table2ordr section	{
+		height: 33px;
+		width: 33px;
+		background-image: url("../images/2.PNG");
+		background-repeat: no-repeat;
+		background-position: center;
+		border: 0.5px gray solid;
+		display: inline-block;
+		float: left;
+		margin: 5px 5px 5px 5px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.table4ordr section	{
+		height: 33px;
+		width: 61px;
+		background-image: url("../images/4.PNG");
+		background-repeat: no-repeat;
+		background-position: center;	
+		border: 0.5px gray solid;
+		display: inline-block;
+		float: left;
+		margin: 5px 5px 5px 5px;	
+	}
+	.table6ordr section	{
+		height: 33px;
+		width: 89px;
+		background-image: url("../images/6.PNG");
+		background-repeat: no-repeat;
+		background-position: center;
+		border: 0.5px gray solid;
+		display: inline-block;
+		float: left;
+		margin: 5px 5px 5px 5px;	
+	}
+	.table8ordr section	{
+		height: 33px;
+		width: 118px;
+    	background-image: url("../images/8.PNG");
+    	background-repeat: no-repeat;
+    	background-position: center;
+		border: 0.5px gray solid;
+		display: inline-block;
+		float: left;
+		margin: 5px 5px 5px 5px;	
+	}
 }
 main div	{
 	width: 300px;
@@ -307,6 +395,9 @@ div > section	{
 	padding-top: 5px;
 }
 /*--------------friends------------------*/
+form{
+	margin-top:5%;
+}
 form h2	{
 	margin-top: 10px;
 	margin-right: 20px;
@@ -400,4 +491,7 @@ nav a{
 #mainManage{
 	margin: 0 auto;
 	float: left;
+}
+a, button{
+	cursor:pointer;
 }

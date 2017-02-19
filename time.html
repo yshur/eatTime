@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-	<html>
-		<head>
+<html>
+	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>eatTime | time</title>
+		<title>time</title>
 		<link rel="stylesheet" href="includes/style.css">
 		<script src="includes/script.js"></script>
-
 	</head>
-		<body id="bodyApp">
-			<div id="wrapper" >
-				<header id="headerApp"><logo>
-					<a href="http://www.cafecafe.co.il/he/home/a/main/" target="_blank" id="cafelogo"></a>
-					<span><a href="first.html" id="logo"></a></span>
-					<section id="menu"></section></logo>
-				</header>
+	<body id="bodyApp">
+		<div id="wrapper" >
+			<header id="headerApp"><logo>
+				<a href="http://www.cafecafe.co.il/he/home/a/main/" id="cafelogo"></a> 
+				<span><a href="index.html" id="logo"></a></span>
+				<section id="menu"></section></logo>
+			</header>
 				<main class="time">
 					<span>שלום אבי</span>
 					<ul>
 						<a href="menu.html?itemsId=34" >1</a>
-						<a href="#" class="CurrKategory">2</a>
+						<a href="#" class="CurrKategory">2<br>שעה</a>
 						<a href="tables.html" >3</a>
 						<a href="#" >4</a>
 						<a href="#" >5</a>
 					</ul>
+					<h4>בחר שעת הגעה או הפעל שירותי מיקום</h4><br>
 					<article>
-						<h5 id="submtaf">שעת הגעה</h5>
-						<br><h4>בחר שעת הגעה או הפעל שרותי מיקום</h4><br>
-						<label><input type="radio" name="time" value="">
-							<input type="time" name="time" value="12:00">
-						</label><br><br>
+					<form action="php/time.php" method="get">
+						<label><h5>שעת הגעה:</h5>
+						<span>*</span><input type="time" name="time" required></label>
+						<p><input type="submit" id="submit" value="שלח"></p>
+					</form>
 						<label><input type="radio" name="time" value=""></label><br>
 							<label><img src="images/map.PNG"/></label>
 					</article>

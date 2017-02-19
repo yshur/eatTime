@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>EaTime | login</title>
+        <link rel="stylesheet" href="includes/style.css">
+        <script src="includes/script.js"></script>
+
+    </head>
+    <body id="bodyApp">
+        <div id="wrapper" >
+            <header id="headerApp"><logo>
+                <a href="http://www.cafecafe.co.il/he/home/a/main/" target="_blank" id="cafelogo"></a>
+                <span><a href="#" id="logo"></a></span>
+                <section id="menu"></section></logo>
+            </header>
+            <nav>
+            </nav>
+            <main>
+                <span></span>
+                <article id="mainIndex">
+                <h4>ברוכים הבאים!!</h4>
+            </article>
+                    <section>
+                        <form id="login" action="php/login.php" method="post">
+                            <h5>התחברות משתמש</h5>
+                            <p><span>*</span><input type="email" value="yair.shur@gmail.com" name="email" placeholder="כתובת דואר אלקטרוני.." required></p>
+                            <p><span>*</span><input type="password" value="123456789" name="password" placeholder="סיסמא.." required></p>
+                            <p><input type="submit" id="submit" value="אישור"></p>
+                       </form>
+                    </section>
+                    <section id="login">
+                        <a href="signin.html">משתמש חדש? לחץ כאן להתחברות</a>
+                    </section>
+            </main>
+        </div>
+        <script src="includes/json2.js"></script>
+    </body>
+</html>

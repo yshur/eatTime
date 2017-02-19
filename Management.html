@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html dir="rtl">
+	<head>
+	<meta charset="utf-8">
+	<title>eatTime | admin</title>
+	<link rel="stylesheet" href="includes/style.css"  type="text/css">
+	<link rel="stylesheet" href="includes/jquery-ui.css"  type="text/css">
+	<script src="includes/jquery-3.1.1.js"></script>
+	<script src="includes/jquery-ui.js"></script>
+	<script src="includes/script.js"></script>
+	</head>
+	<body>
+		<div id="wrapperManage">
+			<header id="headerManage">
+				<a href="#" id="logoManage"></a>
+			</header>
+			<nav id="navManage">
+			<!-- start of freefind search box html -->
+				<table cellpadding=0 cellspacing=0 border=0 >
+					<tr>
+					<td>
+					<form action="http://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+					<input type="hidden" name="si" value="21967869">
+					<input type="hidden" name="pid" value="r">
+					<input type="hidden" name="n" value="0">
+					<input type="hidden" name="_charset_" value="">
+					<input type="hidden" name="bcd" value="&#247;">
+					<input type="text" name="query" size="14"> 
+					<input type="submit" value="search">
+					</form>
+					</td>
+					</tr>
+					
+				</table>
+			<!-- end of freefind search box html -->
+				<ul>
+					<br><a href="management.html">רשימת הזמנות</a><br><br>
+					<a href="#">רשימה שחורה</a>	
+				</ul>
+			</nav>
+			<main id="mainManage">
+				<table>
+					<tr>
+    				<th>שם</th>
+    				<th>תאריך</th>
+    				<th>שעה</th>
+    				<th>מספר שולחן</th>
+    				<th>הערות</th>
+    				<th>ניהול</th>
+					</tr>
+					<tr>
+    				<td>אבי</td>
+    				<td>9/2/17</td>
+    				<td>12:30</td>
+    				<td>23</td>
+    				<td>השתייה תצא בסוף הארוחה</td>
+    				<td>נשלח</td>
+					</tr>
+					<tr>
+ 				    <td>רותם</td>
+				    <td>9/2/17</td>
+				    <td>13:15</td>
+				    <td>51</td>
+				    <td>כסא תינוק</td>
+				    <td>נשלח</td>
+					</tr>
+					<tr>
+ 				    <td>ליאת</td>
+				    <td>9/2/17</td>
+				    <td>14:00</td>
+				    <td>25</td>
+				    <td></td>
+				    <td><a class="sendToButton" >שלח להכנה</a></td>
+					</tr>
+					<tr>
+ 				    <td>הרצל</td>
+				    <td>9/2/17</td>
+				    <td>15:15</td>
+				    <td>34</td>
+				    <td></td>
+				    <td><a class="sendToButton" >שלח להכנה</a></td>
+					</tr>
+					<tr id="dataContainer"><td></td><td></td><td></td><td></td><td></td><td></td>
+					<tr><td></td><td></td><td></td><td></td><td></td><td></td>
+					<tr><td></td><td></td><td></td><td></td><td></td><td></td>
+					<tr><td></td><td></td><td></td><td></td><td></td><td></td>
+					<tr><td></td><td></td><td></td><td></td><td></td><td></td>
+					<tr><td></td><td></td><td></td><td></td><td></td><td></td>
+					<tr><td></td><td></td><td></td><td></td><td></td><td></td>
+					<tr><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+				</table>
+			</main>
+			<div id="dialog" title="התקבלה הזמנה">
+  				<p>התקבלה הזמנה חדשה על שם צבי</p>
+  				<button id="next" onClick="addLine()">אישור</button>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<footer></footer>
+	</body>
+</html>
